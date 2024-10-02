@@ -15,12 +15,13 @@ public class PracticaEvaluada1 {
         double galon = 0;
         double litros;
         double total;
-        
+        //Aqui le pido al usuario la cantidad de galones que desea
         galon = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese la cantidad de galones que desea llevar: "));
-        
+        //Aqui hago las operaciones
         litros = galon * litrosGalon;
         total = litrosGalon * precioLitro;
+        //Aqui imprimo el resultado
+        System.out.println("El costo total de la compra por la cantidad de " + galon + " galones es de: " + total);
         
-        System.out.println("El costo total de la compra por la cantidad de " + galon + " es de: " + total);
     }
 }
