@@ -1,0 +1,23 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.clase3e1;
+
+public class Clase3E1 {
+
+    public static void main(String[] args) {
+        int i, j;
+        
+        for (i=1; i<=5; i++)
+            System.out.println("     @@@@@@@@@@");
+        
+        System.out.println("Linea en blanco");
+        
+        for (i=1; i<=5; i++){
+            for (j=1; j<=10; j++)
+                System.out.print("@");
+            System.out.println(" ");
+        }
+    }
+}
