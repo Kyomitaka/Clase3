@@ -1,0 +1,43 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.clase3e2;
+
+import javax.swing.JOptionPane;
+
+public class Clase3E2 {
+
+    public static void main(String[] args) {
+        int num;
+        int r1, r2, r3, r4, r5, r6, r7, r8, r9, r10 = 0;
+        
+        num = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el número que desee"));
+         JOptionPane.showMessageDialog(null, "La tabla de multiplicar de " + num + " es:");
+        int i = 1;
+        r1 = num * 1;
+        r2 = num * 2;
+        r3 = num * 3;
+        r4 = num * 4;
+        r5 = num * 5;
+        r6 = num * 6;
+        r7 = num * 7;
+        r8 = num * 8;
+        r9 = num * 9;
+        r10 = num * 10;
+      
+        JOptionPane.showMessageDialog(null, "La tabla: " + "\n" +
+                                             r1 + "\n" +
+                                             r2 + "\n" +
+                                             r3 + "\n" +
+                                             r4 + "\n" +
+                                             r5 + "\n" +
+                                             r6 + "\n" +
+                                             r7 + "\n" +
+                                             r8 + "\n" +
+                                             r9 + "\n" +
+                                             r10 + "\n" );
+        
+    }
+        
+    }
