@@ -1,0 +1,30 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.practicaevaluada1;
+
+import javax.swing.JOptionPane;
+
+public class PracticaEvaluada1 {
+
+    public static void main(String[] args) {
+        //Aqui defino las variables
+        double litrosGalon = 3.785;
+        double precioLitro = 700;
+        double galon = 0;
+        double litros;
+        double total;
+
+        //Aqui le pido al usuario la cantidad de galones que desea
+        galon = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese la cantidad de galones que desea llevar: "));
+        
+        //Aqui hago las operaciones
+        litros = galon * litrosGalon;
+        total = litrosGalon * precioLitro;
+
+        //Aqui imprimo el resultado
+        System.out.println("El costo total de la compra por la cantidad de " + galon + " galones es de: " + total);
+        
+    }
+}
