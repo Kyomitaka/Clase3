@@ -1,0 +1,53 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.clase3e6;
+
+import java.util.Scanner;
+
+public class Clase3E6 {
+
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Ingrese la cantidad de estudiantes: ");
+        int cantidadEstudiantes = scanner.nextInt();
+
+        double suma = 0;
+        double notaMayor = 0;
+        double notaMenor = 100;
+        int aprobados = 0;
+
+        
+        for (int i = 0; i < cantidadEstudiantes; i++) {
+            System.out.print("Ingrese la nota del estudiante " + (i + 1) + ": ");
+            double nota = scanner.nextDouble();
+
+            
+            suma += nota;
+            
+            if (nota >= 70) {
+                aprobados++;
+            }
+
+            if (nota > notaMayor) {
+                notaMayor = nota;
+            }
+            if (nota < notaMenor) {
+                notaMenor = nota;
+            }
+        }
+
+        double promedio = suma / cantidadEstudiantes;
+
+        
+        System.out.printf("Nota promedio: " + promedio + "\n" +
+                          "Nota mayor: " + notaMayor + "\n" +
+                          "Nota menor: " + notaMenor + "\n" + 
+                          "Cantidad de estudiantes aprobados: " + aprobados);
+
+        scanner.close();
+    }
+}
